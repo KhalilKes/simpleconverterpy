@@ -13,19 +13,19 @@ def CreatWidgets():
     root.sourceEntry.grid(row=1, column=2, padx=5, pady=20)
 
     destinationLabel = Label(root, text="AUDIO PATH: ", bg = "gray", font=('Helvetica', 10, 'bold'))
-    destinationLabel.grid(row=3, column=1, padx=5, pady=20)
+    destinationLabel.grid(row=2, column=1, padx=5, pady=20)
 
     root.destinationEntry = Entry(root, width=35, textvariable=destination)
-    root.destinationEntry.grid(row=3, column=2, padx=5, pady=20)
+    root.destinationEntry.grid(row=2, column=2, padx=5, pady=20)
 
     SRCBrowseBTN = Button(root, text="BROWSE", command=SBrowse, width=10)
     SRCBrowseBTN.grid(row=1, column=3, padx=5, pady=20)
 
     DESTBrowseBTN = Button(root, text="BROWSE", command=DBrowse, width=10)
-    DESTBrowseBTN.grid(row=3, column=3, padx=5, pady=20)
+    DESTBrowseBTN.grid(row=2, column=3, padx=5, pady=20)
 
     convertBTN = Button(root, text="CONVERT VIDEO", command=Convert, width=20)
-    convertBTN.grid(row=2, column=1, columnspan=3, padx=5, pady=5)
+    convertBTN.grid(row=3, column=1, columnspan=3, padx=5, pady=5)
 
 # making of Sbrowse et DBrowse !!
 
